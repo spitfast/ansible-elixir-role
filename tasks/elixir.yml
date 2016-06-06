@@ -1,0 +1,7 @@
+---
+
+- include: apt_update.yml
+
+- name: Install Elixir
+  apt: pkg=elixir state=present
+  become: true

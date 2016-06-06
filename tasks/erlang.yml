@@ -1,0 +1,16 @@
+---
+
+- name: Download Erlang Solutions deb package
+  get_url:
+    url=https://packages.erlang-solutions.com/{{ elixir_erlang_solution_package }}
+    dest=/tmp/{{ elixir_erlang_solution_package }}
+
+- name: Install Erlang Solutions deb package
+  apt: deb=/tmp/{{ elixir_erlang_solution_package }}
+  become: true
+
+- include: apt_update.yml
+
+- name: Install the Erlang/OTP platform
+  apt: pkg=esl-erlang state=present
+  become: true

@@ -1,2 +1,3 @@
 ---
-# defaults file for elixir
+
+elixir_erlang_solution_package: erlang-solutions_1.0_all.deb

@@ -1,2 +1,7 @@
 ---
-# tasks file for elixir
+
+- include: erlang.yml
+  tags: [elixir, erlang]
+
+- include: elixir.yml
+  tags: [elixir]
