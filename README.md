@@ -1,4 +1,4 @@
-Role Name
+Ansible Elixir role.
 =========
 
 [![Build Status](https://travis-ci.org/spitfast/ansible-elixir-role.svg?branch=master)](https://travis-ci.org/spitfast/ansible-elixir-role)
